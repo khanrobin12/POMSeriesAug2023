@@ -101,8 +101,13 @@ public class ExtentReportListener implements ITestListener {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
 		String methodName = result.getMethod().getMethodName();
 
-		test.get().fail(result.getThrowable(),
-				MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot()).build());
+		try {
+			test.get().fail(result.getThrowable(),
+					MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot()).build());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 

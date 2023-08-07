@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-04T22:41:42 EDT" name="Opencart App Test Regression Suite" finished-at="2023-08-04T22:41:58 EDT" duration-ms="16714">
+  <suite started-at="2023-08-07T13:37:43 EDT" name="Opencart App Test Regression Suite" finished-at="2023-08-07T13:37:56 EDT" duration-ms="13341">
     <groups>
     </groups>
-    <test started-at="2023-08-04T22:41:42 EDT" name="Login Page Test" finished-at="2023-08-04T22:41:58 EDT" duration-ms="16714">
+    <test started-at="2023-08-07T13:37:43 EDT" name="Login Page Test" finished-at="2023-08-07T13:37:56 EDT" duration-ms="13341">
       <class name="com.qa.opencart.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:42 EDT" name="setup" finished-at="2023-08-04T22:41:54 EDT" duration-ms="12139" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:43 EDT" name="setup" finished-at="2023-08-07T13:37:52 EDT" duration-ms="8623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:54 EDT" name="loginPageTest" finished-at="2023-08-04T22:41:54 EDT" duration-ms="164" status="PASS">
+        <test-method signature="loginPageTest()[pri:1, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:52 EDT" name="loginPageTest" finished-at="2023-08-07T13:37:52 EDT" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTest -->
-        <test-method signature="loginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:54 EDT" name="loginPageURLTest" finished-at="2023-08-04T22:41:54 EDT" duration-ms="26" status="PASS">
+        <test-method signature="loginPageURLTest()[pri:2, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:52 EDT" name="loginPageURLTest" finished-at="2023-08-07T13:37:52 EDT" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageURLTest -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:54 EDT" name="forgotPwdLinkExistTest" finished-at="2023-08-04T22:41:55 EDT" duration-ms="155" status="PASS">
+        <test-method signature="forgotPwdLinkExistTest()[pri:3, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:52 EDT" name="forgotPwdLinkExistTest" finished-at="2023-08-07T13:37:52 EDT" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:55 EDT" name="loginTest" finished-at="2023-08-04T22:41:58 EDT" duration-ms="3320" status="PASS">
+        <test-method signature="loginTest()[pri:4, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:52 EDT" name="loginTest" finished-at="2023-08-07T13:37:55 EDT" duration-ms="2699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@4a5905d9]" started-at="2023-08-04T22:41:58 EDT" name="tearDown" finished-at="2023-08-04T22:41:58 EDT" duration-ms="523" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.tests.LoginPageTest@2ce45a7b]" started-at="2023-08-07T13:37:55 EDT" name="tearDown" finished-at="2023-08-07T13:37:56 EDT" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
