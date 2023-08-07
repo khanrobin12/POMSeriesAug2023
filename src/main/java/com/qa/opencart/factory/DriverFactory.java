@@ -91,8 +91,7 @@ public class DriverFactory {
 	public static String getScreenshot() {
 		File srcFile = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
 		// String path = System.getProperty("user.dir") + "\\screenshot.png";
-		String path = System.getProperty("C:\\Users\\user\\eclipse-workspace\\Nov2022POMSeries\\screenshot\\"
-				+ System.currentTimeMillis() + ".png");
+		String path = System.getProperty("user.dir") + "\\screenshots\\" + System.currentTimeMillis() + ".png";
 		File destination = new File(path);
 		try {
 			FileHandler.copy(srcFile, destination);

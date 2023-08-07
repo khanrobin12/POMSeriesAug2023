@@ -1,6 +1,5 @@
 package com.qa.opencart.listeners;
 
-import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +9,7 @@ import org.testng.ITestResult;
 
 import com.qa.opencart.factory.DriverFactory;
 
+import io.qameta.allure.Attachment;
 
 public class TestAllureListener implements ITestListener {
 
@@ -18,19 +18,19 @@ public class TestAllureListener implements ITestListener {
 	}
 
 	// Text attachments for Allure
-	@Attachment(value = "Page screenshot", type = "image/png")
+	@Attachment(value = "Page screenshot", type = "image\\png")
 	public byte[] saveScreenshotPNG(WebDriver driver) {
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	}
 
 	// Text attachments for Allure
-	@Attachment(value = "{0}", type = "text/plain")
+	@Attachment(value = "{0}", type = "text\\plain")
 	public static String saveTextLog(String message) {
 		return message;
 	}
 
 	// HTML attachments for Allure
-	@Attachment(value = "{0}", type = "text/html")
+	@Attachment(value = "{0}", type = "text\\html")
 	public static String attachHtml(String html) {
 		return html;
 	}
@@ -38,7 +38,7 @@ public class TestAllureListener implements ITestListener {
 	@Override
 	public void onStart(ITestContext iTestContext) {
 		System.out.println("I am in onStart method " + iTestContext.getName());
-		//iTestContext.setAttribute("WebDriver", BasePage.getDriver());
+		// iTestContext.setAttribute("WebDriver", BasePage.getDriver());
 	}
 
 	@Override
@@ -60,14 +60,14 @@ public class TestAllureListener implements ITestListener {
 	public void onTestFailure(ITestResult iTestResult) {
 		System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
 		Object testClass = iTestResult.getInstance();
-		//WebDriver driver = BasePage.getDriver();
+		// WebDriver driver = BasePage.getDriver();
 		// Allure ScreenShotRobot and SaveTestLog
 		if (DriverFactory.getDriver() instanceof WebDriver) {
 			System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
 			saveScreenshotPNG(DriverFactory.getDriver());
 		}
 		// Save a log on allure.
-		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");		
+		saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
 	}
 
 	@Override
@@ -81,5 +81,3 @@ public class TestAllureListener implements ITestListener {
 	}
 
 }
-
-
